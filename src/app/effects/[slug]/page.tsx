@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 const effectComponentMap: { [key: string]: React.ComponentType } = {
     'zoom-effect-transition': dynamic(() => import('@/components/effects/ZoomTransition')),
     'bouncy-button': dynamic(() => import('@/components/effects/BouncyButton')),
-    'parallax-image': dynamic(() => import('@/components/effects/ParallaxImage')),
+    'parallax-image': dynamic(() => import('@/components/effects/Parallax')),
 };
 
 type PageProps = {

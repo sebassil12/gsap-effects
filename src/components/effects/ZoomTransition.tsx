@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Image from 'next/image'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ZoomTransitionImage } from '@/app/constants/data-image'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -39,8 +40,8 @@ export default function ParallaxImage() {
             properties into a single declaration.*/}
             <div className='absolute inset-0 overflow-hidden'>
                 <Image 
-                    src={"/images/first_home_slide.webp"}
-                    alt={"first_slide"}
+                    src={ZoomTransitionImage[0].path}
+                    alt={ZoomTransitionImage[0].title}
                     fill
                     sizes="100vw"
                     className="absolute top-0 left-0 -z-10 object-cover"
