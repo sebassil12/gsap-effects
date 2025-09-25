@@ -1,3 +1,5 @@
+import { title } from "process";
+
 // Data used to parse the effects inside the webpage
 export const effects = [
     {
@@ -15,5 +17,9 @@ export const effects = [
         title: 'Parallax Image',
         description: 'An image that moves at a different speed than the page scroll.',
     },
-    // Add your next effect here!
+    {
+        slug: 'navbar-gsap',
+        title: 'Navbar GSAP',
+        description: 'A navbar with GSAP animations and a menu overlay.',
+    }
 ];

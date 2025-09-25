@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach Node.js Server",
+      "type": "node",
+      "request": "attach",
+      "skipFiles": ["<node_internals>/**"],
+      "port": 9229, // Default inspect port
+      "restart": true
+    },
+    {
+      "name": "Launch Chrome Client",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Full Stack (Attach)",
+      "configurations": ["Attach Node.js Server", "Launch Chrome Client"],
+      "stopAll": true
+    }
+  ]
+}

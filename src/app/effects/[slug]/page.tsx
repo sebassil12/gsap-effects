@@ -5,6 +5,7 @@ const effectComponentMap: { [key: string]: React.ComponentType } = {
     'zoom-effect-transition': dynamic(() => import('@/components/effects/ZoomTransition')),
     'bouncy-button': dynamic(() => import('@/components/effects/BouncyButton')),
     'parallax-image': dynamic(() => import('@/components/effects/Parallax')),
+    'navbar-gsap': dynamic(() => import('@/components/effects/NavbarGSAP')),
 };
 
 type PageProps = {
